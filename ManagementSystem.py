@@ -72,13 +72,13 @@ def login():
 		print(e)
 		login()
 
-
+#This to view data
 def view_data(username):
 	ff = open(username, 'r')
 	print(ff.read())
 	ff.close()
 
-
+#Task information showed
 def task_information(username):
 	print("Sir enter n.o of task you want to ADD")
 	j = int(input())
@@ -102,7 +102,7 @@ def task_information(username):
 			break
 	f1.close()
 
-
+#to update taskes
 def task_update(username):
 	username = username+" TASK.txt"
 	print("Please enter the tasks which are completed ")
