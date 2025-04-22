@@ -20,7 +20,7 @@ def user_information(ussnm, pssd):
 	f.write('\n')
 	f.close()
 
-
+#This is for sign up
 def signup():
 	print("Please enter the username by which you wanna access your account")
 	username = input("please enter here: ")
@@ -29,7 +29,7 @@ def signup():
 	print("Sir please proceed towards log in")
 	login()
 
-
+#this is for login
 def login():
 	print("Please enter your username ")
 	user_nm = input("Enter here: ")
@@ -67,18 +67,18 @@ def login():
 		else:
 			print("SIR YOUR PASSWORD OR USERNAME IS WRONG")
 			login()
-
+#exception handling
 	except Exception as e:
 		print(e)
 		login()
 
-
+#This to view data
 def view_data(username):
 	ff = open(username, 'r')
 	print(ff.read())
 	ff.close()
 
-
+#Task information showed
 def task_information(username):
 	print("Sir enter n.o of task you want to ADD")
 	j = int(input())
@@ -102,7 +102,7 @@ def task_information(username):
 			break
 	f1.close()
 
-
+#to update taskes
 def task_update(username):
 	username = username+" TASK.txt"
 	print("Please enter the tasks which are completed ")
