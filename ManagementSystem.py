@@ -20,7 +20,7 @@ def user_information(ussnm, pssd):
 	f.write('\n')
 	f.close()
 
-
+#This is for sign up
 def signup():
 	print("Please enter the username by which you wanna access your account")
 	username = input("please enter here: ")
@@ -29,7 +29,7 @@ def signup():
 	print("Sir please proceed towards log in")
 	login()
 
-
+#this is for login
 def login():
 	print("Please enter your username ")
 	user_nm = input("Enter here: ")
@@ -67,7 +67,7 @@ def login():
 		else:
 			print("SIR YOUR PASSWORD OR USERNAME IS WRONG")
 			login()
-
+#exception handling
 	except Exception as e:
 		print(e)
 		login()
